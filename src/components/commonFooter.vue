@@ -1,12 +1,11 @@
 <template>
   <footer>
     <div class="wrapper">
-      <p>欢迎来到硅谷之光
+      <p>备案号：粤ICP备17164059号-1
         <!-- <a href="https://github.com/bestRenekton" target="_blank"><i class="iconfont icon-github"></i></a>
         <a href="https://www.zhihu.com/people/yang-pang-zi-40/activities" target="_blank"><i class="iconfont icon-zhihu"></i></a> -->
       </p>
-      <p>欢迎光临本站,当前总访问量{{visit}}次</p>
-      <p>每天进步一点点</p>
+      <p>欢迎来到硅谷之光,当前总访问量{{visit}}次；每天进步一点点</p>
     </div>
     <transition name="slide-fade">
       <div v-if="isTop" class="toTop iconfont icon-top" @click="toTop"></div>
