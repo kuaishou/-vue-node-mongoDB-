@@ -20,7 +20,7 @@
             <el-menu-item index="6"><router-link to="/about"><i class="iconfont icon-meho"></i>关于我</router-link></el-menu-item>
             <el-menu-item index="7" v-if="isSignIn===0"><router-link :class="[activeIndex==7?'meBtnOn':'meBtnOff']" to="/sign">登陆</router-link></el-menu-item>
             <el-menu-item index="7" v-else-if="isSignIn==2 || isSignIn==1"><router-link :class="[activeIndex==7?'meBtnOn':'meBtnOff']" to="/visiter">{{nickName}}</router-link></el-menu-item>
-            <el-menu-item index="8" if="isSignIn===1"><router-link to="/admin/list">管理</router-link></el-menu-item>
+            <el-menu-item index="8" v-show="isSignIn==1"><router-link to="/admin/list">管理</router-link></el-menu-item>
           </el-menu>
         </el-col>
         <el-col :xs="4" :sm="0" :md="0" :lg="0" :xl="0" class="">
