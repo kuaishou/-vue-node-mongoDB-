@@ -36,8 +36,10 @@
                   <li><router-link to="/categories">博客分类</router-link></li>
                   <li><router-link to="/collections">我的收藏</router-link></li>
                   <li><router-link to="/demo">案例</router-link></li>
-                  <li><router-link to="/about">个人中心</router-link></li>
-                  <li><router-link v-if="isSignIn===1||isSignIn===2" to="/visiter">{{nickName}}</router-link></li>
+                  <li><router-link to="/about">关于我</router-link></li>
+                  <li v-if="isSignIn===0"><router-link  to="/sign">登陆</router-link></li>
+                  <li v-else-if="isSignIn===1||isSignIn===2"><router-link to="/visiter">{{nickName}}</router-link></li>
+                  <li v-else-if="isSignIn===1"><router-link to="/admin/list">管理</router-link></li>
                 </ul>
               </div>
             </transition >
