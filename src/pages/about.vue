@@ -42,8 +42,10 @@
                 </div>
                 <div class="card">
                   <p class="card-title" id="anchor-us">关于本站</p>
-                  <p class="txt">这个博客主要模仿<a href="https://www.yangyuetao.cn" target="_blank">https://www.yangyuetao.cn</a>感谢大佬！！</p>
-                  <p class="txt">希望我能也坚持学习分享技术。</p>
+                  <p class="txt">本站主要是前端技术分享；记录平时工作中遇到的前端技术问题及解决方案；分享一下学习前端技术心得</p>
+                   <p class="txt">花有重开日，人无再少年；珍惜每一天；做个有梦想的码农</p> 
+                  <!-- <p class="txt">这个博客主要模仿<a href="https://www.yangyuetao.cn" target="_blank">https://www.yangyuetao.cn</a>感谢大佬！！</p>
+                  <p class="txt">希望我能也坚持学习分享技术。</p> -->
                 </div>
                 <div class="card">
                   <p class="card-title" id="anchor-friend">学习参考</p>

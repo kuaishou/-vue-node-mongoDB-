@@ -113,6 +113,9 @@ export default {
             localStorage.setItem("token", response.data.token);
             localStorage.setItem("user_name", response.data.user_name);
             localStorage.setItem("nickName", response.data.nickName);
+            if(response.data.avatar==null){
+              response.data.avatar="./static/img/avatar.0337d28.png";
+            };
             localStorage.setItem("avatar", response.data.avatar);
             if (type == 1) {
               this.$store.commit("changeIsSignIn", 1); //admin
