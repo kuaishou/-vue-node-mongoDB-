@@ -47,6 +47,9 @@ export default {
 
 <style lang="scss" scoped>
 footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background:#2d2d2d;
   color: #bbb;
   box-shadow: 0 -2px 4px 1px rgba(0, 0, 0, 0.5);
