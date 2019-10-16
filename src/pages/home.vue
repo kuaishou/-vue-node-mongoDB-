@@ -10,15 +10,13 @@
             <el-col :xs="0" :sm="4" :md="6" :lg="6" :xl="6">
               <div class="aside">
                 <div class="card">
-                  <p class="title">关于我</p>
-                  <img class="pic" src="../../static/img/p1.png" alt="">
+                
+                  <img class="pic" src="../../static/img/leader.png" alt="">
                   <div class="row">
-                    <p>行路有良友，便是捷径。带上我吧，一起去看更大的世界</p>
+                    <p class="name">邢浩东</p>
+                    <p class="saying">专注前端开发，坚持每周更新分享博客，做一个梦想的码农；花有重开日，人无再少年。</p>
                     <div class="icons">
-                      <a href="https://github.com/bestRenekton" target="_blank"><i class="iconfont icon-github"></i></a>
-                      <a href="https://www.zhihu.com/people/yang-pang-zi-40/activities" target="_blank"><i class="iconfont icon-zhihu"></i></a>
-                      <a href="http://music.163.com/#/user/home?id=272667179" target="_blank"><i class="iconfont icon-yinle"></i></a>
-                      <a href="https://weibo.com/u/5746403289?refer_flag=1005055010_&is_all=1" target="_blank"><i class="iconfont icon-weibo"></i></a>
+                      <a href="https://github.com/kuaishou" target="_blank"><i class="iconfont icon-github"></i></a>
                     </div>
                   </div>
                 </div>
@@ -73,6 +71,7 @@ export default {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 30px rgba(10, 10, 0, 0.1) inset;
   .card{
     border-top: 1px solid #eee;
+    text-align: center;
     .title{
       padding: 10px;
       font-weight: 600;
@@ -80,13 +79,21 @@ export default {
       margin-bottom: 10px;
     }
     .pic{
-      width: 100%;
+      width: 70%;
+      border-radius: 50%;
+      margin-top: 20px;
     }
     .row{
       padding: 0 10px;
-      &>p{
+      .saying{
         color:#bfbfbf;
-        
+        padding: 1rem;
+      }
+      .name{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: #2c3e50;
       }
       .icons{
         padding:10px 0;
