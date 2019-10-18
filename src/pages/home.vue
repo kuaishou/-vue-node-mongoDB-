@@ -10,25 +10,30 @@
             <el-col :xs="0" :sm="4" :md="6" :lg="6" :xl="6">
               <div class="aside">
                 <div class="card">
-                
+
                   <img class="pic" src="../../static/img/leader.png" alt="">
                   <div class="row">
                     <p class="name">邢浩东</p>
                     <p class="saying">专注前端开发，坚持每周更新分享博客，做一个梦想的码农；花有重开日，人无再少年。</p>
+                  </div>
+                </div>
+                <div class="card">
+
+                  <img class="money" src="../../static/img/money.png" alt="">
+                  <div class="row">
+                    <p class="mone-tip">欢迎打赏,1块钱就好，千万别多给</p>
                     <div class="icons">
                       <a href="https://github.com/kuaishou" target="_blank"><i class="iconfont icon-github"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="card">
-                  <p class="title">FRIENDS</p>
+                  <p class="title">友情链接</p>
                   <div class="row">
-                    <a class="link" href="https://www.yangyuetao.cn" target="_blank">哈维</a>
-                    <a class="link" href="https://www.yangyuetao.cn" target="_blank">的光和热</a>
-                    <a class="link" href="https://www.yangyuetao.cn" target="_blank">Secret Blog</a>
-                    <a class="link" href="https://www.yangyuetao.cn" target="_blank">Secret Blog</a>
-                    <a class="link" href="https://www.yangyuetao.cn" target="_blank">Secret Blog</a>
-                    <a class="link" href="https://www.yangyuetao.cn" target="_blank">Secret Blog</a>
+                    <a class="link" href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
+                    <a class="link" href="https://www.liaoxuefeng.com" target="_blank">廖雪峰</a>
+                    <a class="link" href="http://jspang.com" target="_blank">技术胖</a>
+                    <a class="link" href="https://www.zhangxinxu.com" target="_blank">张鑫旭</a>
                   </div>
                 </div>
               </div>
@@ -83,17 +88,24 @@ export default {
       border-radius: 50%;
       margin-top: 20px;
     }
+    .money{
+      width: 60%;
+    }
     .row{
       padding: 0 10px;
       .saying{
         color:#bfbfbf;
         padding: 1rem;
       }
+
       .name{
         font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
         color: #2c3e50;
+      }
+      .mone-tip{
+        color: red;
       }
       .icons{
         padding:10px 0;
@@ -105,10 +117,10 @@ export default {
           background-color: rgba(200, 200, 200, 0.3);
           padding: 8px;
           border-radius: 50%;
-          &:hover{            
+          &:hover{
             color:#fff;
             background-color: rgba(0, 133, 166, 0.8);
-            border-radius: 5px;          
+            border-radius: 5px;
           }
         }
       }
@@ -117,7 +129,7 @@ export default {
         color:#bfbfbf;
         display: inline-block;
         padding: 5px;
-        transition: all .3s;        
+        transition: all .3s;
         &:hover{
           color: #0085a1;
         }

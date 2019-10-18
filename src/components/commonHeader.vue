@@ -2,7 +2,12 @@
   <header>
     <div class="wrapper">
       <el-row>
-        <el-col :xs="20" :sm="4" :md="4" :lg="4" :xl="4"><div class="logo">邢浩东博客的世界</div></el-col>
+        <el-col :xs="20" :sm="4" :md="4" :lg="4" :xl="4">
+          <div class="logo">
+            <img src="../../static/img/favicon.png" alt="">
+            <span>码农有梦想</span>
+            </div>
+          </el-col>
         <el-col :xs="0" :sm="20" :md="20" :lg="20" :xl="20">
           <el-menu
             :default-active="activeIndex"
@@ -99,6 +104,12 @@ header {
     line-height: 40px;
     font-size: 16px;
     margin-left: 20px;
+    >img{
+      height: 100%;
+      width: 26px;
+      vertical-align: text-top;
+      border-radius: 50%;
+    }
   }
   .nav-pc {
     border-bottom: none;
@@ -169,6 +180,12 @@ header {
     .logo {
       line-height: 60px;
       font-size: 18px;
+      >img{
+      height: 100%;
+      width: 26px;
+      vertical-align: text-top;
+      border-radius: 50%;
+    }
     }
   }
   .meBtnOff {
