@@ -19,6 +19,21 @@ import 'mavon-editor/dist/css/index.css'
 Vue.prototype.$axios = axios
 Vue.use(ElementUI)
 Vue.use(mavonEditor)
+router.afterEach(function (transition) {
+  // console.log(transition)
+  setTimeout(() => {
+    // eslint-disable-next-line no-use-before-define
+    var _hmt = _hmt || [];
+    (function () {
+      // 每次执行前，先移除上次插入的代码
+      document.getElementById('baiduCount') && document.getElementById('baiduCount').remove()
+      var hm = document.createElement('script')
+      hm.src = 'https://hm.baidu.com/hm.js?31e3ea93fc79bba66183ee4706f977c3'
+      var s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(hm, s)
+    })()
+  }, 0)
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

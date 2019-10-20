@@ -20,10 +20,10 @@
             <el-menu-item index="1"><router-link to="/"><i class="iconfont icon-home"></i>主页</router-link></el-menu-item>
             <el-menu-item index="2"><router-link to="/archives"><i class="iconfont icon-archives"></i>文章列表</router-link></el-menu-item>
             <el-menu-item index="3"><router-link to="/categories"><i class="iconfont icon-tubiao13"></i>博客分类</router-link></el-menu-item>
-            <el-menu-item index="4"><router-link to="/collections"><i class="iconfont icon-shoucang"></i>我的收藏</router-link></el-menu-item>
-            <el-menu-item index="5"><router-link to="/demo"><i class="iconfont icon-play"></i>案例</router-link></el-menu-item>
-            <el-menu-item index="6"><router-link to="/about"><i class="iconfont icon-meho"></i>关于我</router-link></el-menu-item>
-            <el-menu-item index="7" v-if="isSignIn===0"><router-link :class="[activeIndex==7?'meBtnOn':'meBtnOff']" to="/sign">登陆</router-link></el-menu-item>
+         <!--    <el-menu-item index="4"><router-link to="/collections"><i class="iconfont icon-shoucang"></i>我的收藏</router-link></el-menu-item> -->
+            <el-menu-item index="4"><router-link to="/demo"><i class="iconfont icon-play"></i>案例</router-link></el-menu-item>
+            <el-menu-item index="5"><router-link to="/about"><i class="iconfont icon-meho"></i>关于我</router-link></el-menu-item>
+            <el-menu-item index="6" v-if="isSignIn===0"><router-link :class="[activeIndex==7?'meBtnOn':'meBtnOff']" to="/sign">登陆</router-link></el-menu-item>
             <el-menu-item index="7" v-else-if="isSignIn==2 || isSignIn==1"><router-link :class="[activeIndex==7?'meBtnOn':'meBtnOff']" to="/visiter">{{nickName}}</router-link></el-menu-item>
             <el-menu-item index="8" v-show="isSignIn==1"><router-link to="/admin/list">管理</router-link></el-menu-item>
           </el-menu>
@@ -39,7 +39,7 @@
                   <li><router-link to="/">主页</router-link></li>
                   <li><router-link to="/archives">我的博客</router-link></li>
                   <li><router-link to="/categories">博客分类</router-link></li>
-                  <li><router-link to="/collections">我的收藏</router-link></li>
+                <!--   <li><router-link to="/collections">我的收藏</router-link></li> -->
                   <li><router-link to="/demo">案例</router-link></li>
                   <li><router-link to="/about">关于我</router-link></li>
                   <li v-if="isSignIn===0"><router-link  to="/sign">登陆</router-link></li>
